@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: black
+}
+
+.social-networks {
+  position: relative;
+  top: -3px;
+  display: flex;
+  gap: 4px;
+}
+
+
+.gradient {
+  background: rgb(144,40,47);
+  background: radial-gradient(circle, rgba(144,40,47,0.3) 0%, rgba(144,40,47,0.6) 0%, rgba(16,18,35,0.3730085784313726) 55%);
+  }
